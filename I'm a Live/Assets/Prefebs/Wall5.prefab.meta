@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 9d822c8db4806b645aa9199331649ee9
+labels:
+- Wall
 PrefabImporter:
   externalObjects: {}
   userData: 

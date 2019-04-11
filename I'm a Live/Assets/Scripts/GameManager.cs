@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance = null;
     public BoardManager boardScript;
+    public int playerFoodPoints = 100;
+    [HideInInspector] public bool playersTurn = true;
 
     // lv 4 부터 두마리 나오기 시작
     private int level = 3;
@@ -31,6 +33,11 @@ public class GameManager : MonoBehaviour
     void InitGame()
     {
         boardScript.SetupScene(level);
+    }
+
+    public void GameOver()
+    {
+        enabled = false;
     }
 
     // Update is called once per frame
