@@ -3,8 +3,6 @@ using System;
 using System.Collections.Generic; 		//Allows us to use Lists.
 using Random = UnityEngine.Random;      //Tells Random to use the Unity Engine random number generator.
 
-
-
 public class BoardManager : MonoBehaviour
 {
     // Using Serializable allows us to embed a class with sub properties in the inspector.

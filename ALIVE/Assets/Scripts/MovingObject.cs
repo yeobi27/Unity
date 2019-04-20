@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class MovingObject : MonoBehaviour
 {
     // 움직이게 될 단위시간 활용
-    public float moveTime = .1f;
+    public float moveTime = 0.1f;
     // 충돌체크
     public LayerMask blockingLayer;
 
@@ -21,7 +21,7 @@ public abstract class MovingObject : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
         rb2D = GetComponent<Rigidbody2D>();
         // moveTime 을 계산하기 쉽게하기위해서
-        inverseMoveTime = 1 / moveTime;
+        inverseMoveTime = 1f / moveTime;
     }
 
     protected bool Move(int xDir, int yDir, out RaycastHit2D hit)
